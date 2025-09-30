@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CS3600 Portfolio</title>
+  <title>Portfolio - Bryce Normile</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
@@ -15,9 +15,9 @@
     <div class="nav-container">
       <a href="index.html" class="nav-logo">Bryce Normile</a>
       <ul class="nav-menu">
-        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
         <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         <li class="nav-item"><a href="signin.html" class="nav-link">Sign In</a></li>
         <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
@@ -25,57 +25,60 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="hero-content">
-      <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" />
-      <div>
-        <h1>Bryce Normile</h1>
-        <p>Code Savant</p>
-        <a href="#projects" class="btn">Explore My Work</a>
-      </div>
-    </div>
-  </header>
+  <main class="section">
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
 
-  <section id="about" class="section about">
-    <h2>👋 About Me</h2>
-    <p>
-      I build the best websites ever!
-    </p>
-  </section>
+    <article>
+      <section>
+        <h2>Featured Projects</h2>
+        <p>
+          Here are some of my recent projects that showcase my skills in web development and problem-solving. 
+          Each project represents a unique challenge and learning opportunity.
+        </p>
+      </section>
+    </article>
 
-  <section id="projects" class="section projects">
-    <h2>💼 Projects</h2>
+    <!-- Project Cards -->
     <div class="project-card">
-      <img src="images/project1.jpg" alt="Project 1" />
+      <img src="images/project1.jpg" alt="Hero Project" />
       <div>
-        <h3>Hero</h3>
-        <p>I saved the world.</p>
+        <h3>Hero Project</h3>
+        <p>A comprehensive web application showcasing advanced UI/UX design and modern development practices.</p>
+        <p><strong>Technologies:</strong> <code>HTML5</code>, <code>CSS3</code>, <code>JavaScript</code></p>
       </div>
     </div>
 
     <div class="project-card">
-      <img src="images/project2.jpg" alt="Project 2" />
+      <img src="images/project2.jpg" alt="Cat Savior" />
       <div>
         <h3>Cat Savior</h3>
-        <p>I saved this cat that was stuck in a tree.</p>
+        <p>Mobile-responsive application with cross-platform compatibility and intuitive user interface.</p>
+        <p><strong>Technologies:</strong> <code>React</code>, <code>Node.js</code>, <code>MongoDB</code></p>
       </div>
     </div>
 
     <div class="project-card">
-      <img src="images/project3.jpg" alt="Project 3" />
+      <img src="images/project3.jpg" alt="Good Samaritan" />
       <div>
         <h3>Good Samaritan</h3>
-        <p>I helped an old lady cross the road the other day.</p>
+        <p>Community-focused application with social features and real-time data processing capabilities.</p>
+        <p><strong>Technologies:</strong> <code>Python</code>, <code>Django</code>, <code>PostgreSQL</code></p>
       </div>
     </div>
-  </section>
 
-  <section id="contact" class="section contact">
-    <h2>Get in contact!</h2>
-    <p>Email: <a href="mailto:norm1178@vandals.uidaho.edu">norm1178@vandals.uidaho.edu</a></p>
-    <p>GitHub: <a href="https://www.github.com/bryce-24">bryce-24</a></p>
-    <p>LinkedIn: <a href="#">W.I.P</a></p>
-  </section>
+    <aside>
+      <h3>Skills Demonstrated</h3>
+      <ul>
+        <li>Frontend Development</li>
+        <li>Backend Architecture</li>
+        <li>Database Design</li>
+        <li>API Integration</li>
+        <li>Responsive Design</li>
+      </ul>
+    </aside>
+  </main>
 
   <footer class="footer">
     <div class="footer-content">
