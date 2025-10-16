@@ -1,0 +1,445 @@
+/* Business Page Specific Styles */
+
+/* Business Page Background */
+.business-page {
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.business-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="paw" patternUnits="userSpaceOnUse" width="20" height="20"><circle cx="10" cy="10" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="6" cy="14" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="14" cy="14" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="4" cy="18" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="16" cy="18" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23paw)"/></svg>');
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Business Navigation */
+.business-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  border-bottom: 2px solid rgba(255, 107, 107, 0.3);
+}
+
+.business-nav .nav-logo {
+  color: #ff6b6b;
+  font-size: 1.6rem;
+}
+
+.business-nav .nav-link {
+  color: #333;
+  font-weight: 600;
+}
+
+.business-nav .nav-link:hover {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.business-nav .nav-link.active {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.2);
+  border: 2px solid rgba(255, 107, 107, 0.3);
+}
+
+/* Business Main Content */
+.business-main {
+  position: relative;
+  z-index: 2;
+  padding-top: 100px;
+}
+
+/* Business Hero Section */
+.business-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+  margin: 40px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.business-hero h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Orbitron', sans-serif;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Subscription Section */
+.subscription-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.subscription-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 50px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 107, 107, 0.2);
+}
+
+.subscription-container h2 {
+  text-align: center;
+  color: #ff6b6b;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.subscription-description {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.subscription-form-container {
+  background: rgba(255, 107, 107, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  border: 2px solid rgba(255, 107, 107, 0.1);
+}
+
+.subscription-form .form-group {
+  margin-bottom: 25px;
+}
+
+.subscription-form .form-group label {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.subscription-form .form-group input,
+.subscription-form .form-group select {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.subscription-form .form-group input:focus,
+.subscription-form .form-group select:focus {
+  outline: none;
+  border-color: #ff6b6b;
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+
+.subscription-form .form-group input::placeholder {
+  color: #999;
+}
+
+.required {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+/* Checkbox Styles */
+.checkbox-group {
+  margin-bottom: 25px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  transform: scale(1.2);
+}
+
+.checkbox-label a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+.checkbox-label a:hover {
+  text-decoration: underline;
+}
+
+/* Subscribe Button */
+.subscribe-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  color: #fff;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+}
+
+.subscribe-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(255, 107, 107, 0.4);
+  background: linear-gradient(135deg, #ff5252, #ff7979);
+}
+
+.btn-icon {
+  font-size: 1.3rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 80px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  margin: 40px 20px;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.testimonials-section h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 107, 107, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-content p {
+  color: #333;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  border-top: 2px solid rgba(255, 107, 107, 0.2);
+  padding-top: 15px;
+}
+
+.testimonial-author strong {
+  color: #ff6b6b;
+  font-size: 1.1rem;
+}
+
+.testimonial-author span {
+  color: #666;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 5px;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.faq-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 50px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 107, 107, 0.2);
+}
+
+.faq-item {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(255, 107, 107, 0.1);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.faq-item h3 {
+  color: #ff6b6b;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.faq-item p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Business Footer */
+.business-footer {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-top: 2px solid rgba(255, 107, 107, 0.3);
+  margin-top: 80px;
+}
+
+.business-footer .footer-section h3 {
+  color: #ff6b6b;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.business-footer .footer-links a {
+  color: #666;
+}
+
+.business-footer .footer-links a:hover {
+  color: #ff6b6b;
+}
+
+.business-footer .footer-bottom {
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .business-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-features {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .subscription-container {
+    padding: 30px 20px;
+  }
+  
+  .subscription-form-container {
+    padding: 25px 15px;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-container {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-hero {
+    margin: 20px 10px;
+    padding: 40px 15px;
+  }
+  
+  .business-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .subscription-section {
+    padding: 40px 10px;
+  }
+  
+  .testimonials-section {
+    margin: 20px 10px;
+    padding: 40px 15px;
+  }
+  
+  .faq-section {
+    padding: 40px 10px;
+  }
+}

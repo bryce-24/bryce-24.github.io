@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly Dog Pictures - Bryce's Business</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="business-styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="business-page">
+  <div class="business-background"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar business-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🐕 DogPics Weekly</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Back to Portfolio</a></li>
+        <li class="nav-item"><a href="business.html" class="nav-link active">Subscribe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="business-main">
+    <!-- Hero Section -->
+    <section class="business-hero">
+      <div class="hero-content">
+        <h1>🐕 Weekly Dog Pictures</h1>
+        <p class="hero-subtitle">Get adorable dog pictures delivered to your inbox every week!</p>
+        <p class="hero-description">
+          Join thousands of happy subscribers who start their week with a smile. 
+          Each Monday, you'll be sent a carefully curated, high-quality dog picture 
+          that's guaranteed to brighten your day.
+        </p>
+        <div class="hero-features">
+          <div class="feature">✨ Free Forever</div>
+          <div class="feature">📧 Weekly Delivery</div>
+          <div class="feature">🐾 Adorable Dogs</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription Form -->
+    <section class="subscription-section">
+      <div class="subscription-container">
+        <h2>Subscribe Now</h2>
+        <p class="subscription-description">
+          Fill out the form below and you'll receive your first dog picture within 24 hours!
+        </p>
+        
+        <div class="subscription-form-container">
+          <form class="subscription-form" action="#" method="post">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="required">*</span></label>
+              <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+            </div>
+            
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="required">*</span></label>
+              <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="dogPreference">Dog Preference</label>
+              <select id="dogPreference" name="dogPreference">
+                <option value="any">Any adorable dog</option>
+                <option value="puppies">Puppies</option>
+                <option value="golden-retrievers">Golden Retrievers</option>
+                <option value="labradors">Labradors</option>
+                <option value="huskies">Huskies</option>
+                <option value="bulldogs">Bulldogs</option>
+                <option value="poodles">Poodles</option>
+                <option value="mixed-breeds">Mixed Breeds</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="deliveryDay">Preferred Delivery Day</label>
+              <select id="deliveryDay" name="deliveryDay">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+              </select>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter" checked>
+                <span class="checkmark"></span>
+                I'd also like to receive occasional dog-related news and tips
+              </label>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="terms" name="terms" required>
+                <span class="checkmark"></span>
+                I agree to the <a href="terms.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>
+              </label>
+            </div>
+            
+            <button type="submit" class="subscribe-btn">
+              <span class="btn-text">Subscribe to Dog Pictures</span>
+              <span class="btn-icon">🐕</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+      <h2>What Do The Subscribers Think?</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"This is the best email I get all week! My Monday mornings are so much better now."</p>
+          </div>
+          <div class="testimonial-author">
+            <strong>Sarah M.</strong>
+            <span>Subscriber since 2024</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"I forward these to my whole family. We have a group chat just for the weekly dog pictures!"</p>
+          </div>
+          <div class="testimonial-author">
+            <strong>Mike R.</strong>
+            <span>Subscriber since 2024</span>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Perfect way to start the work week. These pictures never fail to make me smile."</p>
+          </div>
+          <div class="testimonial-author">
+            <strong>Emily K.</strong>
+            <span>Subscriber since 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>How much does this cost?</h3>
+          <p>It's completely free! We believe everyone deserves weekly dog pictures without any cost.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>How often will I receive pictures?</h3>
+          <p>You'll receive one adorable dog picture every week on your chosen delivery day.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Can I unsubscribe anytime?</h3>
+          <p>Absolutely! Every email includes an unsubscribe link, and you can stop receiving pictures at any time.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3>Where do the dog pictures come from?</h3>
+          <p>I source my pictures from various reputable sources, ensuring they're high-quality and properly licensed.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="business-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>🐕 DogPics Weekly</h3>
+        <p>Bringing joy to your inbox, one dog picture at a time.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Back to Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Bryce Normile. All rights reserved. Live, Laugh, Love.</p>
+    </div>
+  </footer>
+</body>
+</html>
