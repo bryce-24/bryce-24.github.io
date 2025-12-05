@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin Dashboard - DogPics Weekly</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="business-styles.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../business-styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     .admin-stats {
@@ -223,7 +223,7 @@
         <!-- Test Email Form -->
         <div class="test-email-form">
           <h3>Send Test Email</h3>
-          <form action="admin/send.php" method="post">
+          <form action="admin.php?action=send" method="post">
             <input type="email" name="email" placeholder="Enter email address" required>
             <button type="submit">Send Test Email</button>
           </form>
@@ -268,15 +268,18 @@
                     </td>
                     <td><?php echo date('Y-m-d H:i', strtotime($sub['created_at'])); ?></td>
                     <td>
-                      <form action="admin/update.php" method="post" style="display: inline;">
+                      <form action="admin.php?action=update" method="post" style="display: inline;">
                         <input type="hidden" name="id" value="<?php echo $sub['id']; ?>">
+                        <input type="hidden" name="dog_preference" value="<?php echo htmlspecialchars($sub['dog_preference']); ?>">
+                        <input type="hidden" name="delivery_day" value="<?php echo htmlspecialchars($sub['delivery_day']); ?>">
+                        <input type="hidden" name="newsletter" value="<?php echo $sub['newsletter']; ?>">
                         <select name="status" onchange="this.form.submit()" style="padding: 5px; border-radius: 5px; border: 1px solid #ddd;">
                           <option value="pending" <?php echo $sub['status'] === 'pending' ? 'selected' : ''; ?>>Pending</option>
                           <option value="active" <?php echo $sub['status'] === 'active' ? 'selected' : ''; ?>>Active</option>
                           <option value="unsubscribed" <?php echo $sub['status'] === 'unsubscribed' ? 'selected' : ''; ?>>Unsubscribed</option>
                         </select>
                       </form>
-                      <form action="admin/delete.php" method="post" style="display: inline;" onsubmit="return confirm('Are you sure you want to delete this subscription?');">
+                      <form action="admin.php?action=delete" method="post" style="display: inline;" onsubmit="return confirm('Are you sure you want to delete this subscription?');">
                         <input type="hidden" name="id" value="<?php echo $sub['id']; ?>">
                         <button type="submit" class="admin-btn btn-delete">Delete</button>
                       </form>
